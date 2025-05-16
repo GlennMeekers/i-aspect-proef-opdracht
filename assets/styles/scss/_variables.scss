@@ -1,0 +1,31 @@
+// color variables
+$white: #fff;
+$grey_light: #f5f5f5;
+$grey: #c4c4c4;
+$grey-alt: #e5e5e5;
+$grey_dark: #646464;
+$black_light: #424242;
+$black: #222;
+
+$primary: #c4bc8b;
+$secondary: #151515;
+$green: #327957;
+$orange: #d36f3d;
+$orange_light: #fcddca;
+
+// site margins variables
+$site-gap_desktop: 64px;
+$site-gap_tablet: 40px;
+$site-gap_mobile: 20px;
+
+// box shadow variables
+$content_box-shadow: 4px 0px 25px 0px rgba(47, 75, 104, 0.25);
+$header_box-shadow: 0px 0px 16px 0px rgba(47, 75, 104, 0.25);
+$button_box-shadow: 0px 4px 18px 0px rgba(47, 75, 104, 0.25);
+
+// font variables
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,500,600,700,800");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,600,700,800");
+
+$font_primary: "Nunito", sans-serif;
+$font_secondary: "Roboto", sans-serif;

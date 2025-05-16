@@ -1,0 +1,434 @@
+@use "variables" as *;
+
+/* Defaults
+---------------------------------------------------------------------------- */
+
+/* Typographical Elements
+--------------------------------------------- */
+
+html {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background-color: $grey_light;
+  color: $black;
+  font-family: $font_primary;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.625;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+button,
+.button,
+input:focus,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+textarea:focus {
+  transition: all 0.2s ease-in-out;
+}
+
+a {
+  color: $primary;
+  text-decoration: none;
+  transition: 150ms ease;
+  font-weight: 700;
+
+  &:hover {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+}
+
+.bg-dark a {
+  color: $white;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+p {
+  margin: 0 0 22px;
+  padding: 0;
+}
+
+ol,
+ul {
+  margin: 0 0 22px;
+  padding: 0;
+}
+
+ul ul,
+ol ol {
+  margin: 0 0 12px;
+}
+
+li {
+  list-style-type: none;
+}
+
+ul li {
+  position: relative;
+  margin-bottom: 8px;
+  list-style-position: inside;
+}
+
+ol li {
+  list-style-type: decimal;
+  margin-bottom: 8px;
+  list-style-position: inside;
+}
+
+ul li ul,
+ul li ol,
+ol li ul,
+ol li ol {
+  padding-left: 16px;
+  margin: 8px 0;
+}
+
+ul li ul li,
+ol li ul li {
+  list-style-type: none;
+}
+
+hr {
+  border: 0;
+  border-collapse: collapse;
+  border-bottom: 1px solid currentColor;
+  clear: both;
+  color: $grey;
+  margin: 1.65em auto;
+}
+
+b,
+strong {
+  font-weight: 700;
+}
+
+blockquote,
+cite,
+em,
+i {
+  font-style: italic;
+}
+
+mark {
+  background: $grey;
+  color: $black;
+}
+
+blockquote {
+  margin: 20px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+
+  p {
+    color: $primary !important;
+  }
+}
+cite {
+  font-size: 14px;
+  color: $primary;
+  display: block;
+
+  &::before {
+    content: "— ";
+  }
+}
+
+/* Typography
+--------------------------------------------- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font_secondary;
+  font-weight: 800;
+  line-height: 1.2;
+  margin: 0 0 20px;
+  color: $black;
+}
+
+h1 {
+  font-size: 36px;
+  color: inherit;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 26px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 16px;
+}
+/* Objects
+--------------------------------------------- */
+
+embed,
+iframe,
+img,
+object,
+video,
+.wp-caption {
+  max-width: 100%;
+}
+
+img {
+  height: auto;
+  vertical-align: top;
+}
+
+figure {
+  display: inline-block;
+  margin: 0;
+}
+
+/* Forms
+--------------------------------------------- */
+input,
+select,
+textarea {
+  appearance: none;
+  background-color: $white;
+  border: 1px solid $white;
+  color: $black;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 12px;
+  width: 100%;
+}
+
+input[type="checkbox"],
+input[type="image"],
+input[type="radio"] {
+  width: auto;
+}
+
+:-ms-input-placeholder {
+  font-family: $font_primary;
+  color: $grey_dark;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+::placeholder {
+  font-family: $font_primary;
+  color: $grey_dark;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+form[role="search"] button[type="submit"] {
+  background-color: $black;
+  color: $white;
+  border: 1px solid $primary;
+  padding: 10px 22px;
+  margin: 0;
+  font-weight: 400;
+  align-items: center;
+  overflow: hidden;
+  cursor: pointer;
+  text-decoration: none;
+  white-space: normal;
+  width: auto;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+input[type="button"]:focus,
+input[type="button"]:hover,
+input[type="reset"]:focus,
+input[type="reset"]:hover,
+input[type="submit"]:focus,
+input[type="submit"]:hover,
+form[role="search"] button[type="submit"]:focus,
+form[role="search"] button[type="submit"]:hover {
+  background-color: $grey_dark;
+  color: $white;
+  border-color: $grey_dark;
+}
+
+button,
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $black;
+  border: 1px solid $primary;
+  border-radius: 0;
+  color: $primary;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 10px 22px;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: max-content;
+
+  &:focus,
+  &:hover {
+    background-color: $primary;
+    border-color: $primary;
+    color: $black;
+  }
+
+  &.button-link {
+    padding: 0;
+    border-radius: 0;
+    background-color: transparent;
+    border-color: transparent;
+    text-transform: none;
+    color: $primary;
+
+    &::after {
+      content: "";
+      display: inline-block;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3Cpath fill='%23c4bc8b' d='M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z'/%3E%3C/svg%3E");
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 12px;
+      height: 12px;
+      margin-left: 8px;
+      transition: 150ms ease;
+    }
+
+    &:focus,
+    &:hover {
+      background-color: transparent;
+      border-color: transparent;
+      color: $primary;
+    }
+  }
+
+  &.button-outlined {
+    border: 2px solid $primary;
+    background-color: transparent;
+    color: $primary;
+  }
+}
+
+.site-container button:disabled,
+.site-container button:disabled:hover,
+.site-container input:disabled,
+.site-container input:disabled:hover,
+.site-container input[type="button"]:disabled,
+.site-container input[type="button"]:disabled:hover,
+.site-container input[type="reset"]:disabled,
+.site-container input[type="reset"]:disabled:hover,
+.site-container input[type="submit"]:disabled,
+.site-container input[type="submit"]:disabled:hover {
+  background-color: $grey;
+  border-width: 0;
+  color: $grey_dark;
+  cursor: not-allowed;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button {
+  display: none;
+}
+
+/* Tables
+--------------------------------------------- */
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-bottom: 40px;
+  width: 100%;
+  table-layout: fixed;
+}
+
+tbody {
+  border-bottom: 1px solid $grey;
+}
+
+td,
+th {
+  line-height: 2;
+  text-align: left;
+  vertical-align: top;
+}
+
+td {
+  padding: 0.5em;
+}
+
+tr {
+  border-top: 1px solid $grey;
+}
+
+th {
+  font-weight: 600;
+  padding: 0.5em;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* Typography
+  --------------------------------------------- */
+
+  h1 {
+    font-size: 42px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 28px;
+  }
+
+  h4 {
+    font-size: 24px;
+  }
+
+  h5,
+  h6 {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* Typography
+  --------------------------------------------- */
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+}

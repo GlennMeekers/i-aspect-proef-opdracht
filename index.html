@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>InterBikes</title>
+    <link rel="stylesheet" href="/assets/styles/style.min.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="/assets/scripts/script.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <!-- Top Bar -->
+      <div class="header__top container">
+        <ul class="desktop-only">
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <path
+                d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"
+              /></svg
+            ><span>Twee vestigingen, in Leuven en Tienen</span>
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <path
+                d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"
+              /></svg
+            ><span>Officieel Shimano Service Center</span>
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <path
+                d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"
+              /></svg
+            ><span>E-Bike Specialist</span>
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <path
+                d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"
+              /></svg
+            ><span>Professionele Eigen Werkplaats</span>
+          </li>
+        </ul>
+        <ul class="auth-links">
+          <li><a href="#">Registeren</a></li>
+          <li><a href="#">Inloggen</a></li>
+        </ul>
+      </div>
+
+      <!-- Middle Section -->
+      <div class="header__middle container">
+        <div class="site-logo">
+          <a href="#">
+            <img
+              src="/assets/images/Interbikes_Logo_White_no_tag_020.png"
+              alt="Logo"
+            />
+          </a>
+        </div>
+
+        <div class="input-search desktop-only">
+          <input
+            class="input input-search"
+            type="text"
+            placeholder="Waar ben je naar op zoek?"
+          />
+        </div>
+
+        <div class="rating-card">
+          <img
+            src="/assets/images/klantenbeoordelingen-card.png"
+            alt="klanten beoordelingen"
+          />
+        </div>
+        <span>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path
+              d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+            />
+          </svg>
+        </span>
+        <div class="nav-items-extra">
+          <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <path
+                d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8l0-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5l0 3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20-.1-.1s0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5l0 3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2l0-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"
+                fill="#c4bc8b"
+              />
+            </svg>
+          </a>
+          <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+              <path
+                d="M0 24C0 10.7 10.7 0 24 0L69.5 0c22 0 41.5 12.8 50.6 32l411 0c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3l-288.5 0 5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5L488 336c13.3 0 24 10.7 24 24s-10.7 24-24 24l-288.3 0c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5L24 48C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"
+                fill="#c4bc8b"
+              />
+            </svg>
+          </a>
+          <button class="navbar-toggle"></button>
+        </div>
+      </div>
+
+      <!-- Bottom Navigation -->
+
+      <div class="header_bottom container">
+        <nav class="navbar">
+          <div id="navbarMenu" class="navbar-menu">
+            <div class="navbar-item has-dropdown">
+              <a class="navbar-link">Fietsen</a>
+              <button class="sub-menu-toggle"></button>
+              <ul class="navbar-dropdown">
+                <li><a class="navbar-item">Sub-item 1</a></li>
+                <li><a class="navbar-item">Sub-item 2</a></li>
+                <li><a class="navbar-item">Sub-item 3</a></li>
+                <li><a class="navbar-item">Sub-item 4</a></li>
+              </ul>
+            </div>
+            <div class="navbar-item has-dropdown">
+              <a class="navbar-link">Financiering</a>
+              <button class="sub-menu-toggle"></button>
+              <ul class="navbar-dropdown">
+                <li><a class="navbar-item">Sub-item 1</a></li>
+                <li><a class="navbar-item">Sub-item 2</a></li>
+                <li><a class="navbar-item">Sub-item 3</a></li>
+                <li><a class="navbar-item">Sub-item 4</a></li>
+              </ul>
+            </div>
+            <div class="navbar-item">
+              <a class="navbar-link is-arrowless">360° 3D Bodyscanning</a>
+            </div>
+            <div class="navbar-item">
+              <a class="navbar-link is-arrowless">Winkels</a>
+            </div>
+            <div class="navbar-item has-dropdown">
+              <a class="navbar-link">Werkplaats</a>
+              <button class="sub-menu-toggle"></button>
+              <ul class="navbar-dropdown">
+                <li><a class="navbar-item">Sub-item 1</a></li>
+                <li><a class="navbar-item">Sub-item 2</a></li>
+                <li><a class="navbar-item">Sub-item 3</a></li>
+                <li><a class="navbar-item">Sub-item 4</a></li>
+              </ul>
+            </div>
+            <div class="navbar-item has-dropdown">
+              <a class="navbar-link">Webshop</a>
+              <button class="sub-menu-toggle"></button>
+              <ul class="navbar-dropdown">
+                <li><a class="navbar-item">Sub-item 1</a></li>
+                <li><a class="navbar-item">Sub-item 2</a></li>
+                <li><a class="navbar-item">Sub-item 3</a></li>
+                <li><a class="navbar-item">Sub-item 4</a></li>
+              </ul>
+            </div>
+            <div class="navbar-item has-dropdown">
+              <a class="navbar-link">Nieuws</a>
+              <button class="sub-menu-toggle"></button>
+              <ul class="navbar-dropdown">
+                <li><a class="navbar-item">Sub-item 1</a></li>
+                <li><a class="navbar-item">Sub-item 2</a></li>
+                <li><a class="navbar-item">Sub-item 3</a></li>
+                <li><a class="navbar-item">Sub-item 4</a></li>
+              </ul>
+            </div>
+            <div class="navbar-item">
+              <a class="navbar-link is-arrowless">Contact</a>
+            </div>
+            <div class="input-search touch-only">
+              <input
+                class="input input-search"
+                type="text"
+                placeholder="Waar ben je naar op zoek?"
+              />
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="hero">
+        <div class="hero__text">
+          <div class="hero__text-box">
+            <h1>Dé fietswinkel voor professionals en fietsfanaten.</h1>
+            <p>
+              De beste fietsen en accessoires voor elke fietser. Ontdek onze
+              collectie en vind jouw perfecte fiets
+            </p>
+          </div>
+          <a href="#" class="button button-outlined">Lees meer</a>
+        </div>
+        <div class="image-wrap">
+          <img
+            src="/assets/images/hero-image.jpeg"
+            alt="Hero Image"
+            class="hero__image"
+          />
+        </div>
+      </div>
+    </main>
+
+    <section>
+      <div class="is-flex">
+        <div class="flex-image-wrap">
+          <img
+            src="/assets/images/aditya-wardhana-kfbAgFAtWTI-unsplash.jpg"
+            alt="3D Bodyscanning"
+            class="flex-image"
+          />
+        </div>
+        <div class="flex-content">
+          <div class="flex-content-inner">
+            <h2>360° 3D Bodyscanning</h2>
+            <p>
+              lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              tincidunt, nunc at bibendum facilisis, nisi nunc aliquet nunc, nec
+              ullamcorper nisi. Suspendisse potenti. Donec euismod, nisi vel
+              tincidunt lacinia, nunc nisl aliquet nunc, eget aliquet nisl nunc
+              vel aliquet nisl.
+            </p>
+            <a href="#" class="button">Lees meer</a>
+          </div>
+        </div>
+      </div>
+      <div class="is-flex is-flex-row-reverse">
+        <div class="flex-image-wrap">
+          <img
+            src="/assets/images/erik-mclean-AYh_U2ZKdjY-unsplash.jpg"
+            alt="Image 2"
+            class="flex-image"
+          />
+        </div>
+        <div class="flex-content">
+          <div class="flex-content-inner">
+            <h2>Werkplaats</h2>
+            <p>
+              lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              tincidunt, nunc at bibendum facilisis, nisi nunc aliquet nunc, nec
+              ullamcorper nisi. Suspendisse potenti. Donec euismod, nisi vel
+              tincidunt lacinia, nunc nisl aliquet nunc, eget aliquet nisl nunc
+              vel aliquet nisl.
+            </p>
+            <a href="#" class="button">Maak een afspraak</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call-to-action -->
+    <section class="call-to-action bg-black">
+      <div class="call-to-action__text">
+        <h2 class="underline">Allles voor een tevreden klant!</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+          tincidunt, nunc at bibendum facilisis, nisi nunc aliquet nunc, nec
+          ullamcorper nisi. Suspendisse potenti.
+        </p>
+        <blockquote>
+          <p>
+            "Ik ben zeer tevreden met mijn nieuwe fiets! De service was
+            uitstekend en het personeel was erg behulpzaam."
+          </p>
+        </blockquote>
+        <cite>Dhr/mvr. Bormotov</cite>
+
+        <img
+          src="/assets/images/klantenbeoordelingen-card.png"
+          alt="Klantenbeoordelingen"
+          class="footer__ratings"
+        />
+      </div>
+    </section>
+
+    <!-- Product slider -->
+    <section class="product-slider container">
+      <div class="is-flex space-between max-width-large">
+        <h2>Top 12 best verkochte fietsen</h2>
+        <a href="#" class="button button-link">Bekijk alle fietsen</a>
+      </div>
+      <div class="slider-container">
+        <div
+          class="product-card"
+          itemscope
+          itemtype="http://schema.org/Product"
+        >
+          <div class="product-image-container">
+            <img
+              src="/assets/images/bike-product-image.jpg"
+              class="product-image"
+              alt="Product 1"
+              itemprop="image"
+            />
+            <span class="discount-label">-20%</span>
+          </div>
+          <div class="product-info">
+            <p class="product-label">Cortina | U4</p>
+            <h3 class="product-title" itemprop="name">Product Titel</h3>
+            <p class="product-description" itemprop="description">
+              Beschrijving van product.
+            </p>
+            <p class="product-price">
+              <span
+                itemprop="offers"
+                itemscope
+                itemtype="http://schema.org/Offer"
+              >
+                <span itemprop="priceCurrency" content="EUR">€</span>
+                <span itemprop="price" content="999.99">999,99</span>
+              </span>
+            </p>
+            <a href="#" class="button" itemprop="url">Bekijk product</a>
+          </div>
+        </div>
+        <div
+          class="product-card"
+          itemscope
+          itemtype="http://schema.org/Product"
+        >
+          <div class="product-image-container">
+            <img
+              src="/assets/images/bike-product-image.jpg"
+              class="product-image"
+              alt="Product 1"
+              itemprop="image"
+            />
+            <span class="discount-label">-20%</span>
+          </div>
+          <div class="product-info">
+            <p class="product-label">Cortina | U4</p>
+            <h3 class="product-title" itemprop="name">Product Titel</h3>
+            <p class="product-description" itemprop="description">
+              Beschrijving van product.
+            </p>
+            <p class="product-price">
+              <span
+                itemprop="offers"
+                itemscope
+                itemtype="http://schema.org/Offer"
+              >
+                <span itemprop="priceCurrency" content="EUR">€</span>
+                <span itemprop="price" content="999.99">999,99</span>
+              </span>
+            </p>
+            <a href="#" class="button" itemprop="url">Bekijk product</a>
+          </div>
+        </div>
+        <div
+          class="product-card"
+          itemscope
+          itemtype="http://schema.org/Product"
+        >
+          <div class="product-image-container">
+            <img
+              src="/assets/images/bike-product-image.jpg"
+              class="product-image"
+              alt="Product 1"
+              itemprop="image"
+            />
+            <span class="discount-label">-20%</span>
+          </div>
+          <div class="product-info">
+            <p class="product-label">Cortina | U4</p>
+            <h3 class="product-title" itemprop="name">Product Titel</h3>
+            <p class="product-description" itemprop="description">
+              Beschrijving van product.
+            </p>
+            <p class="product-price">
+              <span
+                itemprop="offers"
+                itemscope
+                itemtype="http://schema.org/Offer"
+              >
+                <span itemprop="priceCurrency" content="EUR">€</span>
+                <span itemprop="price" content="999.99">999,99</span>
+              </span>
+            </p>
+            <a href="#" class="button" itemprop="url">Bekijk product</a>
+          </div>
+        </div>
+        <div
+          class="product-card"
+          itemscope
+          itemtype="http://schema.org/Product"
+        >
+          <div class="product-image-container">
+            <img
+              src="/assets/images/bike-product-image.jpg"
+              class="product-image"
+              alt="Product 1"
+              itemprop="image"
+            />
+            <span class="discount-label">-20%</span>
+          </div>
+          <div class="product-info">
+            <p class="product-label">Cortina | U4</p>
+            <h3 class="product-title" itemprop="name">Product Titel</h3>
+            <p class="product-description" itemprop="description">
+              Beschrijving van product.
+            </p>
+            <p class="product-price">
+              <span
+                itemprop="offers"
+                itemscope
+                itemtype="http://schema.org/Offer"
+              >
+                <span itemprop="priceCurrency" content="EUR">€</span>
+                <span itemprop="price" content="999.99">999,99</span>
+              </span>
+            </p>
+            <a href="#" class="button" itemprop="url">Bekijk product</a>
+          </div>
+        </div>
+        <div
+          class="product-card"
+          itemscope
+          itemtype="http://schema.org/Product"
+        >
+          <div class="product-image-container">
+            <img
+              src="/assets/images/bike-product-image.jpg"
+              class="product-image"
+              alt="Product 1"
+              itemprop="image"
+            />
+            <span class="discount-label">-20%</span>
+          </div>
+          <div class="product-info">
+            <p class="product-label">Cortina | U4</p>
+            <h3 class="product-title" itemprop="name">Product Titel</h3>
+            <p class="product-description" itemprop="description">
+              Beschrijving van product.
+            </p>
+            <p class="product-price">
+              <span
+                itemprop="offers"
+                itemscope
+                itemtype="http://schema.org/Offer"
+              >
+                <span itemprop="priceCurrency" content="EUR">€</span>
+                <span itemprop="price" content="999.99">999,99</span>
+              </span>
+            </p>
+            <a href="#" class="button" itemprop="url">Bekijk product</a>
+          </div>
+        </div>
+        <div
+          class="product-card"
+          itemscope
+          itemtype="http://schema.org/Product"
+        >
+          <div class="product-image-container">
+            <img
+              src="/assets/images/bike-product-image.jpg"
+              class="product-image"
+              alt="Product 1"
+              itemprop="image"
+            />
+            <span class="discount-label">-20%</span>
+          </div>
+          <div class="product-info">
+            <p class="product-label">Cortina | U4</p>
+            <h3 class="product-title" itemprop="name">Product Titel</h3>
+            <p class="product-description" itemprop="description">
+              Beschrijving van product.
+            </p>
+            <p class="product-price">
+              <span
+                itemprop="offers"
+                itemscope
+                itemtype="http://schema.org/Offer"
+              >
+                <span itemprop="priceCurrency" content="EUR">€</span>
+                <span itemprop="price" content="999.99">999,99</span>
+              </span>
+            </p>
+            <a href="#" class="button" itemprop="url">Bekijk product</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Company Logo Grid -->
+    <section class="max-width-large my-2">
+      <div class="is-grid grid-col-3 company-logo-grid container">
+        <h3 class="grid-title text-center">
+          InterBikes is trotse dealer van o.a de volgende merken
+        </h3>
+        <div class="grid-item company-logo-grid__item">
+          <img src="/assets/images/ph-logo_large.jpg" alt="InterBikes Logo" />
+        </div>
+        <div class="grid-item company-logo-grid__item">
+          <img src="/assets/images/ph-logo_large.jpg" alt="InterBikes Logo" />
+        </div>
+        <div class="grid-item company-logo-grid__item">
+          <img src="/assets/images/ph-logo_large.jpg" alt="InterBikes Logo" />
+        </div>
+        <div class="grid-item company-logo-grid__item">
+          <img src="/assets/images/ph-logo_large.jpg" alt="InterBikes Logo" />
+        </div>
+        <div class="grid-item company-logo-grid__item">
+          <img src="/assets/images/ph-logo_large.jpg" alt="InterBikes Logo" />
+        </div>
+        <div class="grid-item company-logo-grid__item">
+          <img src="/assets/images/ph-logo_large.jpg" alt="InterBikes Logo" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Flex Container -->
+    <section class="max-width-large my-2">
+      <div class="container is-flex">
+        <div class="flex-content bg-grey-alt">
+          <div class="flex-content-inner">
+            <h2>Soldenactie Speed Pedelecs</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              tincidunt, nunc at bibendum facilisis, nisi nunc aliquet nunc, nec
+              ullamcorper nisi. Suspendisse potenti. Donec euismod, nisi vel
+              tincidunt lacinia, nunc nisl aliquet nunc, eget aliquet nisl nunc
+              vel aliquet nisl.
+            </p>
+            <a href="#" class="button">Bekijk ons aanbod</a>
+          </div>
+        </div>
+        <div class="flex-image-wrap">
+          <img
+            src="/assets/images/maria-victoria-portelles-WJzxUx9CmQw-unsplash.jpg"
+            alt="Image 1"
+            class="flex-image"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Call-to-Action -->
+    <section class="max-width-xlarge">
+      <div class="call-to-action image-cta bg-grey-alt">
+        <img
+          src="/assets/images/bohdan-kadun-BIFYImjZkVg-unsplash.jpg"
+          alt="bike workshop"
+        />
+        <a href="#" class="button">Kom lang in de winkel</a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer container">
+      <div class="footer__grid">
+        <!-- Column 1: Contact Information -->
+        <div class="footer__column footer__column-1">
+          <h3>Onze winkel</h3>
+          <ul
+            class="contact-info"
+            itemscope
+            itemtype="http://schema.org/Organization"
+          >
+            <li><strong itemprop="name">i-Aspect</strong></li>
+            <li
+              itemprop="address"
+              itemscope
+              itemtype="http://schema.org/PostalAddress"
+            >
+              <span itemprop="streetAddress">Predikherenstraat 31</span><br />
+              <span itemprop="postalCode">3512 TM</span>
+              <span itemprop="addressLocality">Utrecht</span>
+            </li>
+            <li>
+              <a href="tel:0302324280" itemprop="telephone"
+                >Tel: 030 232 42 80</a
+              >
+            </li>
+            <li>
+              <a href="mailto:info@i-aspect.com" itemprop="email"
+                >Mail: info@i-aspect.com</a
+              >
+            </li>
+            <li>KVK: <span itemprop="identifier">123456789</span></li>
+            <li>BTW: <span itemprop="taxID">NL123456789B01</span></li>
+          </ul>
+
+          <p>Vragen over uw bestelling</p>
+          <p><a href="tel:0302324280">Tel: 030 232 42 80</a></p>
+          <p><a href="mailto:info@i-aspect.com">Mail: info@i-aspect.com</a></p>
+
+          <div class="footer__social">
+            <a href="#"
+              ><img src="/assets/icons/facebook-f-brands.svg" alt="Facebook"
+            /></a>
+            <a href="#"
+              ><img src="/assets/icons/instagram-brands.svg" alt="Instagram"
+            /></a>
+            <a href="#"
+              ><img src="/assets/icons/twitter-brands.svg" alt="Twitter"
+            /></a>
+          </div>
+        </div>
+
+        <!-- Column 2: Important Links -->
+        <div class="footer__column footer__column-2">
+          <h3>Service</h3>
+          <ul>
+            <li><a href="#">Fietsen</a></li>
+            <li><a href="#">Elektrishe Fietsen</a></li>
+            <li><a href="#">Webshop</a></li>
+            <li><a href="#">Onze merken</a></li>
+            <li><a href="#">Onze winkel</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Opening Times -->
+        <div class="footer__column footer__column-3">
+          <h3>Openingstijden</h3>
+          <ul itemscope itemtype="http://schema.org/OpeningHoursSpecification">
+            <li>
+              <span itemprop="dayOfWeek" content="Monday">Maandag:</span>
+              <span itemprop="opens" content="00:00"></span>
+              <span itemprop="closes" content="00:00">gesloten</span>
+            </li>
+            <li>
+              <span itemprop="dayOfWeek" content="Tuesday">Dinsdag:</span>
+              <span itemprop="opens" content="09:00">09:00</span> -
+              <span itemprop="closes" content="18:00">18:00</span>
+            </li>
+            <li>
+              <span itemprop="dayOfWeek" content="Wednesday">Woensdag:</span>
+              <span itemprop="opens" content="09:00">09:00</span> -
+              <span itemprop="closes" content="18:00">18:00</span>
+            </li>
+            <li>
+              <span itemprop="dayOfWeek" content="Thursday">Donderdag:</span>
+              <span itemprop="opens" content="09:00">09:00</span> -
+              <span itemprop="closes" content="18:00">18:00</span>
+            </li>
+            <li>
+              <span itemprop="dayOfWeek" content="Friday">Vrijdag:</span>
+              <span itemprop="opens" content="09:00">09:00</span> -
+              <span itemprop="closes" content="18:00">18:00</span>
+            </li>
+            <li>
+              <span itemprop="dayOfWeek" content="Saturday">Zaterdag:</span>
+              <span itemprop="opens" content="09:00">09:00</span> -
+              <span itemprop="closes" content="18:00">18:00</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Logo and Ratings -->
+        <div class="footer__column footer__column-4">
+          <img
+            src="/assets/images/Interbikes_Logo_White_no_tag_020.png"
+            alt="InterBikes Logo"
+            class="footer__logo"
+          />
+          <img
+            src="/assets/images/klantenbeoordelingen-card.png"
+            alt="Klantenbeoordelingen"
+            class="footer__ratings"
+          />
+        </div>
+      </div>
+
+      <!-- Misc Logos -->
+      <div class="footer__misc-logos">
+        <ul>
+          <li>
+            <img src="/assets/images/ideal.png" alt="Ideal Logo" />
+          </li>
+          <li>
+            <img src="/assets/images/bancontact.png" alt="Bancontact Logo" />
+          </li>
+          <li>
+            <img src="/assets/images/ssl.jpg" alt="SSL Logo" />
+          </li>
+          <li>
+            <img src="/assets/images/dhl.png" alt="DHL Logo" />
+          </li>
+        </ul>
+      </div>
+
+      <!-- Footer Credits -->
+      <div class="footer__credits">
+        <p>
+          <a href="#">Algemene voorwaarden</a> | <a href="#">Retouren</a> |
+          <a href="#">Privacy</a>
+        </p>
+        <p>&copy; 2023 Crossretail 4 - Alle rechten voorbehouden.</p>
+        <p>Website realisatie i-Aspect.</p>
+      </div>
+    </footer>
+  </body>
+</html>
